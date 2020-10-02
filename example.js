@@ -72,7 +72,7 @@ function draw(selector, data){
            .style("stroke", stroke)
            .style("opacity", .7);
 
-       // make the tooltip
+       // make the tooltip.  You can add in tooltip.html whatever node attributes you want to display with html formatting.
        var tooltip_in = function(d) {
          tooltip.html("<h4>" + d.id + "</h4>")
            .style("left", (d3.event.pageX) + "px")
